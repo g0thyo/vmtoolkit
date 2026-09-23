@@ -36,3 +36,8 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /platform:x64 /target:wi
 - Run Potato outside the toolkit and you get plain unpatched Potato — no harm, just the nag again.
 
 MIT — [LICENSE](LICENSE)
+
+---
+
+This script is intended for personal use only. If you use Voicemeeter for work or make money from it, consider paying what you can on the [Voicemeeter site](https://vb-audio.com/Voicemeeter/potato.htm).
+
