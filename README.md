@@ -1,5 +1,7 @@
 # vmtoolkit
 
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/g0thyo/vmtoolkit/total)](https://github.com/g0thyo/vmtoolkit/releases)
+
 Voicemeeter Potato, without the activation nag. Works on v3.1.1.9 (x64 and x86).
 
 Nothing on disk is modified — the patch lives in the running process only.
