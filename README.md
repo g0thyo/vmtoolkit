@@ -1,11 +1,39 @@
 # vmtoolkit
 
-Voicemeeter Potato nag removal (v3.1.1.9, x64+x86) + logo-click badge. Patches memory only — the exe on disk stays factory-clean because Potato self-hashes its file to decrypt its UI.
+Voicemeeter Potato, without the activation nag. Works on v3.1.1.9 (x64 and x86).
 
-**Use:** download `vmactivator.exe` + `runme.bat` from [Releases](../../releases), run the bat once (admin), done — delete the folder after.
-**Python variant:** `python vm_activator.py [--x86|--attach|--noinject]` (stdlib only).
-**Build exe yourself:** `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /platform:x64 /target:winexe /r:System.Windows.Forms.dll /r:System.Drawing.dll /out:vmactivator.exe src\vmactivator.cs` — no Visual Studio needed.
+Nothing on disk is modified — the patch lives in the running process only.
+That's required, not a choice: Potato hashes its own exe to decrypt its UI,
+so a patched file won't open. In-memory is the only way that works.
 
-Notes: the "unregistered" banner stays (that flow builds the UI, left alone on purpose). Badge avatar fetches from GitHub; offline = text-only. Patch applies per launch — that's what the launcher hides from you.
+## Install
 
-MIT — [LICENSE](LICENSE).
+1. Download `vmactivator.exe` and `runme.bat` from [Releases](../../releases).
+2. Run `runme.bat` once (it asks for admin).
+
+Done. The Start Menu Potato shortcuts now launch nag-free, and clicking the
+Voicemeeter logo shows a small credit badge. You can delete the downloaded
+folder after — the exe is installed next to Voicemeeter.
+
+## Source
+
+Everything is in this repo:
+
+- `vm_activator.py` — the Python version (stdlib only, Python 3.8+)
+- `src/vmactivator.cs` — the exe's source
+
+## Build from source
+
+No Visual Studio needed — the compiler ships with Windows:
+
+```
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /platform:x64 /target:winexe /r:System.Windows.Forms.dll /r:System.Drawing.dll /out:vmactivator.exe src\vmactivator.cs
+```
+
+## Notes
+
+- The "unregistered" banner stays — that code path builds the UI, so it's left alone.
+- The badge avatar loads from GitHub; offline you get a text-only badge.
+- Run Potato outside the toolkit and you get plain unpatched Potato — no harm, just the nag again.
+
+MIT — [LICENSE](LICENSE)
