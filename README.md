@@ -11,8 +11,8 @@ so a patched file won't open. In-memory is the only way that works.
 1. Download `vmactivator.exe` and `runme.bat` from [Releases](../../releases).
 2. Run `runme.bat` once (it asks for admin).
 
-Done. The Start Menu Potato shortcuts now launch nag-free, and clicking the
-Voicemeeter logo shows a small credit badge.
+Done. The Start Menu Potato shortcuts now launch nag-free, to check click the
+Voicemeeter logo on the top left, it should show a small credit badge. enjoy :3 
 
 ## Source
 
