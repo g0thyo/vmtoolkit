@@ -12,8 +12,7 @@ so a patched file won't open. In-memory is the only way that works.
 2. Run `runme.bat` once (it asks for admin).
 
 Done. The Start Menu Potato shortcuts now launch nag-free, and clicking the
-Voicemeeter logo shows a small credit badge. You can delete the downloaded
-folder after — the exe is installed next to Voicemeeter.
+Voicemeeter logo shows a small credit badge.
 
 ## Source
 

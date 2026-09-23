@@ -40,6 +40,5 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
   "}"
 
 echo.
-echo Done. Start Menu -^> "Voicemeeter Potato" now launches nag-free forever.
-echo This folder can be deleted — the exe lives in "%DST%".
+echo Done. Start Menu -^> "Voicemeeter Potato" now launches nag-free.
 pause
